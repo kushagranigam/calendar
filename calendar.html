@@ -1,0 +1,42 @@
+<html>
+<head>
+	<link rel="stylesheet" href="calendar.css" type="text/css">
+</head>
+<body onload="calendar()">
+	<div class="calender">
+		<div id="dateView">
+			<table border="0">
+				<tr><td class="horNav" onclick="prevYear()">&lt;&lt;</td><td class="horNav" onclick="prevMonth()">&lt;</td><th colspan="3" id="month" onclick="transMonth()"></th><td class="horNav" onclick="nextMonth()">&gt;</td><td class="horNav" onclick="nextYear()">&gt;&gt;</td></tr>
+				<tr><td>Su</td><td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+				<tr><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td><td class="view1"></td></tr>
+			</table>
+		</div>
+		<div id="monthView">
+			<table border="0">
+				<tr><td class="horNav" onclick="prevYear()">&lt;</td><th colspan="5" id="year" onclick="transYear()"></th><td class="horNav" onclick="nextYear()">&gt;</td></tr>
+				<tr><td class="view2" onclick="selMonth(0)" colspan="2">Jan</td><td class="view2" onclick="selMonth(1)" colspan="3">Feb</td><td class="view2" onclick="selMonth(2)" colspan="2">Mar</td></tr>
+				<tr><td class="view2" onclick="selMonth(3)" colspan="2">Apr</td><td class="view2" onclick="selMonth(4)" colspan="3">May</td><td class="view2" onclick="selMonth(5)" colspan="2">Jun</td></tr>
+				<tr><td class="view2" onclick="selMonth(6)" colspan="2">Jul</td><td class="view2" onclick="selMonth(7)" colspan="3">Aug</td><td class="view2" onclick="selMonth(8)" colspan="2">Sep</td></tr>
+				<tr><td class="view2" onclick="selMonth(9)" colspan="2">Oct</td><td class="view2" onclick="selMonth(10)" colspan="3">Nov</td><td class="view2" onclick="selMonth(11)" colspan="2">Dec</td></tr>
+			</table>
+		</div>
+		<div id="yearView">
+			<table border="0">
+				<tr><td align="center" class="verNav" colspan="3" onclick="prevYearView()"> ^ </td></tr>
+				<tr><td class="view3"></td><td class="view3"></td><td class="view3"></td></tr>
+				<tr><td class="view3"></td><td class="view3"></td><td class="view3"></td></tr>
+				<tr><td class="view3"></td><td class="view3"></td><td class="view3"></td></tr>
+				<tr><td align="center" class="verNav" colspan="3" onclick="nextYearView()"> v </td></tr>
+			</table>
+		</div>
+	</div>
+	<p id="today"></p>
+	<p id="d"></p>
+	<script src="calendar.js"></script>
+</body>
+</html>

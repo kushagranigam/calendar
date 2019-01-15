@@ -1,0 +1,61 @@
+.view1{
+	cursor			:pointer;
+	height			:20px;
+	padding			:2px;
+	width			:20px;
+}
+.view1:hover{
+	background		:#0000FF;
+	transition		:background ease 2s;
+}
+.view2,.view3{
+	cursor			:pointer;
+	height			:40px;
+	width			:50px;
+}
+.view2:hover,.view3:hover{
+	background		:#0000FF;
+	transition		:background ease 2s;
+}
+.horNav{
+	cursor			:pointer;
+	margin			:auto;
+	padding			:0px;
+	width			:20px;
+}
+.horNav:hover{
+	background		:#0000FF;
+	transition		:background ease 2s;
+}
+.verNav{
+	cursor			:pointer;
+	height			:25px;
+	margin			:auto;
+	padding			:0px;
+	width			:150px;
+}
+.verNav:hover{
+	background		:#0000FF;
+	transition		:background ease 2s;
+}
+#dateView,#monthView,#yearView{
+	cursor			:pointer;
+	background		:skyblue;
+	display			:block;
+	height			:180px;
+	padding			:10px;
+	position		:absolute;
+	width			:170px;
+}
+#monthView,#yearView{
+	visibility		:hidden;
+}
+#today{
+	position		:relative;
+}
+table{
+	font-family		:"Century Gothic";
+	font-size		:13px;
+	margin			:auto;
+	text-align		:center;
+}
